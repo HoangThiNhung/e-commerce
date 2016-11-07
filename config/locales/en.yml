@@ -1,2 +1,52 @@
 en:
-  hello: "Hello world"
+  users:
+    confirmations:
+      resend_confirmation: "Resend confirmation instructions"
+    mailer:
+      welcome: "Welcome"
+      hello: "Hello"
+      confirm_account_content: "You can confirm your account email through the link below:"
+      confirm_button: "Confirm my account"
+      password_change_content: "We're contacting you to notify you that your password has been changed"
+      reset_password_first_paragraph: "Someone has requested a link to change your password. You can do this through the link below."
+      reset_password_second_paragraph: "If you didn't request this, please ignore this email."
+      reset_password_third_paragraph: "Your password won't change until you access the link above and create a new one."
+      change_password_link: "Change my password"
+      unlock_first_paragraph: "Your account has been locked due to an excessive number of unsuccessful sign in attempts."
+      unlock_second_paragraph: "Click the link below to unlock your account:"
+      unlock_link: "Unlock my account"
+    passwords:
+      edit_header: "Change your password"
+      edit_password_label: "New password"
+      edit_password_confirmation_label: "Confirm new password"
+      edit_button: "Change my password"
+      new_header: "Forgot your password?"
+      new_button: "Send me reset password instructions"
+    registrations:
+      edit_header: "Edit"
+      edit_waiting_confirm: "Currently waiting confirmation for:"
+      edit_password_field_notice: "leave blank if you don't want to change it"
+      edit_password_length: "characters minimum"
+      edit_current_password_notice: "we need your current password to confirm your changes"
+      edit_button: "Update"
+      edit_cancel_account: "Cancel my account"
+      edit_unhappy: "Unhappy?"
+      edit_cancel_account_button: "Cancel my account"
+      edit_confirm: "Are you sure?"
+      edit_back: "bank"
+      new_header: "Sign up"
+      new_password_length: "characters minimum"
+      new_button: "Sign up"
+    sessions:
+      header: "Log in"
+      button: "Log in"
+    shared:
+      log_in_link: "Log in"
+      sign_up_link: "Sign up"
+      forgot_password: "Forgot your password?"
+      resend_confirm_email: "Didn't receive confirmation instructions?"
+      resend_unlock_email: "Didn't receive unlock instructions?"
+      sign_in_with_omni_auth: "Sign in with"
+    unlock:
+      header: "Resend unlock instructions"
+      button: "Resend unlock instructions"
