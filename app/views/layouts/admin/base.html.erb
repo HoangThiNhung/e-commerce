@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><% t "title" %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag :admin, media: :all, "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag :admin, "data-turbolinks-track": "reload" %>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <%= render "layouts/admin/header" %>
+    </header>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <%= render "layouts/admin/left_navigation" %>
+    </div>
+
+    <div id="page-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <%= yield %>
+          </div>
+        </div>
+      </div
+    </div>
+  </body>
+</html>
