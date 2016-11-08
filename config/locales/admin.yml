@@ -1,0 +1,15 @@
+en:
+  admin:
+    title: "E-commerce"
+    log_out: "log out"
+    account:
+      settings: "settings"
+    left_nav:
+      order_management: "Order Management"
+      category_management: "Category Management"
+      product_management: "Product Management"
+      account_management: "Account Management"
+      account_list:
+        admin_list: "Amin List"
+        member_list: "Member List"
+      statistic_data: "Statistic Data"

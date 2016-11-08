@@ -1,0 +1,34 @@
+<ul class="nav navbar-nav side-nav">
+  <li>
+    <%= link_to t("admin.left_nav.order_management"), "javascript:;",
+      data: {toggle: "collapse", target:"#order-management"} %>
+    <ul id="oder-management" class="collapse">
+    </ul>
+  </li>
+  <li>
+    <%= link_to t("admin.left_nav.category_management"), "javascript:;",
+      data: {toggle: "collapse", target:"#category_management"} %>
+    <ul id="category_management" class="collapse">
+    </ul>
+  </li>
+  <li>
+    <%= link_to t("admin.left_nav.product_management"), "javascript:;",
+      data: {toggle: "collapse", target:"#product-management"} %>
+    <ul id="product-management" class="collapse">
+    </ul>
+  </li>
+  <li>
+    <%= link_to t("admin.left_nav.account_management"), "javascript:;",
+      data: {toggle: "collapse", target:"#list-account"} %>
+      <ul id="list-account" class="collapse">
+        <li><%= link_to t("admin.left_nav.account_list.admin_list"), "#" %></li>
+        <li><%= link_to t("admin.left_nav.account_list.member_list"), "#" %></li>
+      </ul>
+  </li>
+  <li>
+    <%= link_to t("admin.left_nav.statistic_data"), "javascript:;",
+      data: {toggle: "collapse", target:"#statistic-data"} %>
+    <ul id="statistic-data" class="collapse">
+    </ul>
+  </li>
+</ul>

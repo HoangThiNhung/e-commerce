@@ -1,0 +1,132 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$page-bg: #fff;
+$side-nav-bg: #222;
+$logo-color: #fff;
+$top-nav-link-color: #999;
+$top-nav-link-open-color: #fff;
+$top-nav-link-open-bg: #000;
+$side-nav-link-color: #999;
+
+body {
+  margin-top: 100px;
+}
+
+#wrapper {
+  padding-left: 0;
+}
+
+#page-wrapper {
+  width: 100%;
+  padding: 0;
+  background-color: $page-bg;
+}
+
+.top-nav {
+  padding: 0 15px;
+  > {
+    li {
+      display: inline-block;
+      float: left;
+      > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 20px;
+        color: $top-nav-link-color;
+        &:hover, &:focus {
+          color: #fff;
+          background-color: #000;
+        }
+      }
+    }
+    .open > {
+      a {
+        color: $top-nav-link-open-color;
+        background-color: $top-nav-link-open-bg;
+        &:hover, &:focus {
+          color: #fff;
+          background-color: #000;
+        }
+      }
+      .dropdown-menu {
+        float: left;
+        position: absolute;
+        margin-top: 0;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #fff;
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        > li > a {
+          white-space: normal;
+        }
+      }
+    }
+  }
+}
+
+.side-nav > li > ul {
+  padding: 0;
+  > li > a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: $side-nav-link-color;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: $logo-color;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  padding-left: 15px;
+  font-weight: bold;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    margin-top: 50px;
+  }
+  #wrapper {
+    padding-left: 225px;
+  }
+  #page-wrapper {
+    padding: 10px;
+  }
+  .side-nav {
+    position: fixed;
+    top: 51px;
+    left: 225px;
+    width: 225px;
+    margin-left: -225px;
+    border: none;
+    border-radius: 0;
+    overflow-y: auto;
+    background-color: $side-nav-bg;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+    > li > a {
+      width: 225px;
+    }
+    li a {
+      &:hover, &:focus {
+        outline: none;
+        background-color: #000 !important;
+      }
+    }
+  }
+}
