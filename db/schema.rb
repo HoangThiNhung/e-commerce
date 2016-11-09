@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20161107074738) do
     t.integer  "depth"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_categories_on_name", unique: true
+    t.index ["name"], name: "index_categories_on_name"
   end
 
   create_table "colors", force: :cascade do |t|
