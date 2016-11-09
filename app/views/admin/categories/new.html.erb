@@ -1,0 +1,27 @@
+<%= form_for [:admin, @category] do |f| %>
+  <div class="row">
+    <div class="row">
+      <div class="row">
+        <div class="col-md-3 text-right">
+          <span><%= t "admin.categories.parent" %></span>
+        </div>
+        <div class="col-md-7">
+          <%= select_tag "parent_id", options_from_collection_for_select(@categories, "id", "name"),
+            prompt: t("admin.categories.root"), class: "form-control" %>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-md-3 text-right">
+          <span><%= t "admin.categories.name" %></span>
+        </div>
+        <div class="col-md-7">
+          <%= f.text_field :name, class: "form-control",
+            placeholder: t("admin.categories.name"), required: true %>
+        </div>
+      </div><br>
+    </div><br>
+    <div class="col-md-2 col-md-offset-3">
+      <%= f.submit t("admin.categories.create_button"), class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>

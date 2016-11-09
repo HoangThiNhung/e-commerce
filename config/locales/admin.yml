@@ -13,3 +13,9 @@ en:
         admin_list: "Amin List"
         member_list: "Member List"
       statistic_data: "Statistic Data"
+    categories:
+      parent: "Category parent"
+      root: "Root"
+      name: "Category name"
+      create_button: "Create"
+      update_button: "Update"
